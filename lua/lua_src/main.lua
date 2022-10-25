@@ -33,4 +33,14 @@ function logu(url)
         osinttb = __newindex(v, respb, "\r\n")
         if osinttb.__index(v) ~= osinttb.
         -- return output and write it to html with proper syntacticality
+        while wait(len(url.response.time)) do 
+            for repsb,url.response in ipairs(osinttb) do 
+                if respb.exists and io.read(repsb, "t") == true then 
+                    io.write(respb, fair)
+                    table.split(fair, respb, osinttb)
+                    print("1 done")
+                end
+            end
+        end
+    end
     end
