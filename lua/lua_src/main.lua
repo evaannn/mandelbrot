@@ -4,7 +4,9 @@ ltn12 = require("ltn12")
 -- ltn12 = require 'ltn12'
   
 local osinttb = {}
-
+args = {
+    ["Argument 1"] = "--unp" -- index 1
+}
 osinttb = setmetatable(osinttb, v) -- assume v is iteratable
 
 for osintb,v in pairs(osint) do 
@@ -43,4 +45,6 @@ function logu(url)
             end
         end
     end
+
+
     end
